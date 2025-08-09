@@ -4,8 +4,8 @@ from datetime import datetime
 import os
 from jinja2 import Template
 
-CSV_FILE = 'markov-bank/data.csv'
-OUTPUT = 'markov-bank/index.html'
+CSV_FILE = 'data.csv'
+OUTPUT = 'index.html'
 
 # Fun list of fictional bank addresses
 ADDRESSES = [
@@ -116,7 +116,7 @@ TEMPLATE = """
 </head>
 <body>
     <header class="bank-header">
-        <img src="boss.jpg" alt="Bank Logo" class="bank-logo">
+        <img src="markov-bank.webp" alt="Bank Logo" class="bank-logo">
         <div>
             <div class="bank-name">Markov Bank</div>
             <div class="bank-address">{{ bank_address }}</div>
